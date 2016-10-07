@@ -42,8 +42,8 @@ phantom.create()
             var normal_view_name_postfix = 'normal';
             var visualized_view_name_postfix = "visualized";
 
-            var normal_view_rendername = imgId + "/" + normal_view_name_postfix + '.' + configs.FILE_FORMAT;
-            var visualized_view_rendername = imgId + "/" + visualized_view_name_postfix + '.' + configs.FILE_FORMAT;
+            var normal_view_rendername = imgId + "-" + normal_view_name_postfix + '.' + configs.FILE_FORMAT;
+            var visualized_view_rendername = imgId + "-" + visualized_view_name_postfix + '.' + configs.FILE_FORMAT;
 
             // render the normal view
             sitepage
@@ -63,7 +63,7 @@ phantom.create()
                 });
 
             console.log('page is analyzed!');
-            jsonfile.writeFile(imgId+'/'+'data.json', rawlist, function (err) {
+            jsonfile.writeFile(imgId+'.json', rawlist, function (err) {
                 console.error(err)
             })
 
