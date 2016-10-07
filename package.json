@@ -1,0 +1,23 @@
+{
+  "name": "webtypographer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhouieh/webtypographer.git"
+  },
+  "author": "amir houieh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirhouieh/webtypographer/issues"
+  },
+  "homepage": "https://github.com/amirhouieh/webtypographer#readme",
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "phantom": "^2.1.21"
+  }
+}
